@@ -1,0 +1,104 @@
+/* Geral */
+.decoracao,
+.introducao img {
+   position: absolute;
+}
+
+/* Containers */
+.retangulo {
+   width: 200px;
+   height: 200px;
+   left: 15px;
+   top: 0;
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   background: linear-gradient(
+      136.92deg,
+      #2dc7ed 3.14%,
+      rgba(45, 199, 237, 0) 100%
+   );
+   transform: rotate(45deg);
+}
+
+.circulo1 {
+   clip-path: circle(50% at 50% 50%);
+   background: linear-gradient(270deg, #f2c94c 0%, rgba(242, 201, 76, 0) 100%);
+   width: 200px;
+   height: 200px;
+   right: 20px;
+   top: 0;
+}
+
+.circulo2 {
+   clip-path: circle(50% at 50% 50%);
+   background: linear-gradient(270deg, #7248ec 0%, rgba(114, 72, 236, 0) 100%);
+   width: 200px;
+   height: 200px;
+   right: 520px;
+   bottom: -250px;
+}
+
+.triangulo {
+   clip-path: polygon(50% 0, 100% 100%, 0 100%);
+   background: linear-gradient(180deg, #00e861 0%, rgba(0, 232, 97, 0) 100%);
+   width: 200px;
+   height: 200px;
+   right: -60px;
+   bottom: -120px;
+}
+
+.chanfrado {
+   clip-path: inset(0 round 15%);
+   background: linear-gradient(
+      136.92deg,
+      #ef7c89 3.14%,
+      rgba(239, 124, 137, 0) 100%
+   );
+   width: 200px;
+   height: 200px;
+   left: 80px;
+   bottom: -240px;
+}
+
+/* Imagens */
+.retangulo-imagem {
+   left: 40px;
+   top: 25px;
+}
+
+.circulo1-imagem {
+   right: 40px;
+   top: 25px;
+}
+
+.circulo2-imagem {
+   right: 550px;
+   bottom: -220px;
+}
+
+.triangulo-imagem {
+   right: -35px;
+   bottom: -100px;
+}
+
+.chanfrado-imagem {
+   left: 100px;
+   bottom: -220px;
+}
+
+@media (max-width: 1568px) {
+    .triangulo, .triangulo-imagem {
+        display: none;
+    }
+}
+
+@media (max-width: 1500px) {
+    .retangulo, .retangulo-imagem, .circulo2, .circulo2-imagem {
+        display: none;
+    }
+}
+
+@media (max-width: 942px) {
+    .circulo1, .circulo1-imagem, .chanfrado, .chanfrado-imagem {
+        display: none;
+    }
+}

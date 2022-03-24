@@ -1,0 +1,51 @@
+/*Variáveis: Cores */
+:root {
+   --purple: #873eff;
+   --green: #04d361;
+   --dark: #0e091b;
+   --dark-200: #171228;
+   --gray: #aeaeae;
+   --light: #f9f9f9;
+}
+
+.cor-purple {
+   color: var(--cor-purple);
+}
+.cor-green {
+   color: var(--cor-green);
+}
+.cor-dark {
+   color: var(--cor-dark);
+}
+.cor-dark-200 {
+   color: var(--cor-dark-200);
+}
+.cor-gray {
+   color: var(--cor-gray);
+}
+.cor-light {
+   color: var(--cor-light);
+}
+
+/* Estilo */
+.container {
+   max-width: 1248px;
+   margin: 0 auto;
+   padding: 60px 20px;
+}
+
+body {
+   background: var(--dark);
+   font-family: "IBM Plex Mono", monospace;
+}
+
+.btn {
+   font-family: "DM Sans", sans-serif;
+   font-size: 1.5rem;
+   line-height: 1.302;
+   text-transform: uppercase;
+   font-weight: 700;
+   color: var(--light);
+}
+
+

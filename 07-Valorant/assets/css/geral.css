@@ -1,0 +1,25 @@
+/*Variáveis*/
+:root {
+   --white: #fff;
+   --vermelho: #ff4656;
+}
+
+/* Estilo */
+body {
+   min-height: 100vh;
+   background: url("../img/fundo.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: var(--white);
+}
+
+@font-face {
+   font-family: "Open Sans";
+   src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+   font-family: "Druk Wide Bold";
+   src: url("../fonts/Druk\ Wide\ Bold.ttf") format("truetype");
+}
+

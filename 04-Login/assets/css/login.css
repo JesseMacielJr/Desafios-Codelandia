@@ -1,0 +1,136 @@
+/* Parte Esquerda - Imagem Principal */
+.imagem-principal {
+   display: flex;
+   place-content: center;
+   width: 50%;
+}
+
+/* Parte Direita - Tela de Login */
+.login {
+   width: 347px;
+   display: flex;
+   flex-direction: column;
+   font-family: "Lato";
+}
+
+.login-introducao {
+   font-family: "Merriweather";
+   color: var(--dark);
+   margin-bottom: 40px;
+}
+
+.login-introducao h2 {
+   font-size: 1rem;
+   line-height: 1.257;
+   font-weight: 400;
+   margin-bottom: 7px;
+}
+
+.login-introducao h1 {
+   font-size: 1.625rem;
+   line-height: 1.257;
+   font-weight: 700;
+}
+
+.login-formulario {
+   display: flex;
+   flex-direction: column;
+   place-content: center;
+   color: var(--dark);
+}
+
+.login-formulario label {
+   display: block;
+   font-size: 1rem;
+   line-height: 1.2;
+   margin-bottom: 11px;
+}
+
+.login-formulario input[type="email"],
+.login-formulario input[type="password"] {
+   width: 100%;
+   border: 1px solid var(--input);
+   border-radius: 5px;
+   font-size: 0.875rem;
+   line-height: 1.2;
+   margin-bottom: 11px;
+   color: var(--dark);
+   padding: 16px 20px;
+}
+
+.login-formulario input[type="password"] {
+   margin-bottom: 0px;
+}
+
+.login-formulario input::placeholder {
+   color: var(--dark);
+}
+
+.login-esqueceu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 28px 0px;
+}
+
+.login-esqueceu div {
+   display: flex;
+   gap: 10px;
+}
+
+.login-esqueceu div input {
+   background: var(--white300);
+}
+
+.botao-entrar {
+   background: var(--green);
+   margin-bottom: 15px;
+}
+
+.botao-google {
+   background: var(--dark);
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   justify-content: center;
+}
+
+.login-cadastro {
+   align-self: center;
+   position: absolute;
+   bottom: 50px;
+}
+
+.login-cadastro span {
+   font-size: 1rem;
+   line-height: 1.2;
+}
+
+@media (max-width: 867px) {
+   .imagem-principal {
+      display: none;
+   }
+   article {
+      width: 100%;
+   }
+   .login {
+      margin: 0 32px;
+   }
+}
+
+@media (max-width: 357px) {
+   .imagem-principal {
+      display: none;
+   }
+   article {
+      width: 100%;
+   }
+   .login {
+      margin: 0 32px;
+   }
+   .login-esqueceu {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+   }
+}

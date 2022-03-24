@@ -1,0 +1,23 @@
+/*Variáveis*/
+:root {
+   --green: #628e75;
+   --blue: #1a4855;
+   --white: #f9f9f9;
+}
+
+/* Estilo */
+body {
+   min-height: 100vh;
+   font-family: "Poppins", sans-serif;
+   background: linear-gradient(130.02deg, #628e75 0.66%, #1a4855 83.32%)
+      no-repeat;
+   box-shadow: 26px 24px 90px rgba(31, 26, 51, 0.13);
+}
+
+a {
+   text-transform: uppercase;
+   color: var(--white);
+   font-size: 1rem;
+   font-weight: 1.8;
+   font-weight: 500;
+}

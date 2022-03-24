@@ -1,0 +1,25 @@
+/* Header */
+header {
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 40px 25px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header img {
+   max-width: 100px;
+}
+
+header ul {
+   display: flex;
+   gap: 32px;
+   align-items: center;
+}
+
+@media (max-width: 1020px) {
+    header {
+        padding: 20px 25px;
+    }
+}

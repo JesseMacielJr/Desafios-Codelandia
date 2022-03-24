@@ -1,0 +1,49 @@
+/* Principal */
+.introducao {
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 0px 40px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.introducao h1 {
+   font-size: 2.25rem;
+   line-height: 1.3;
+   font-weight: 700;
+   margin-bottom: 18px;
+   color: var(--white);
+}
+
+.introducao span {
+   font-size: 1.125rem;
+   line-height: 1.22;
+   font-weight: 500;
+   margin-bottom: 40px;
+}
+
+.introducao-botoes {
+   display: flex;
+   gap: 15px;
+   align-items: center;
+}
+
+.introducao-botoes a {
+   padding: 15px 40px;
+   border-radius: 10px;
+   font-size: 1.25rem;
+   line-height: 1.21;
+}
+
+.botao-curriculo {
+   color: var(--background);
+   background: var(--roxo);
+   font-weight: 600;
+}
+
+.botao-contato {
+   background: var(--white);
+   border: 2px solid var(--borda);
+   font-weight: 500;
+}

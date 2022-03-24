@@ -1,0 +1,30 @@
+/* Header */
+header {
+   text-align: center;
+   padding-top: 90px;
+}
+
+header span {
+   display: block;
+   font-size: 1.25rem;
+   line-height: 1.215;
+   font-weight: 700;
+   margin-bottom: 35px;
+   text-transform: uppercase;
+}
+
+header h1 {
+   font-size: 6rem;
+   line-height: 1.215;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+@media (max-width: 996px) {
+   header {
+      padding-top: 30px;
+   }
+   header span {
+      margin-bottom: 15px;
+   }
+}

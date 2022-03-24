@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+        <link rel="preload" href="assets/css/style.css" as="style">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>JordanShoes</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-promocao">
+                <p>Ganhe R$ 10,00 de desconto no frete</p>
+            </div>
+            <div class="header-logo">
+                <p>JordanShoes</p>
+            </div>
+        </header>
+
+        <section class="introducao">
+            <div class="introducao-conteudo">
+                <h1>A melhor loja de Jordan</h1>
+                <div id="typed-strings">
+                    <p>O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e o jogador Michael Jordan.</p>
+                </div>
+                <div class="introducao-conteudo-texto">
+                    <span id="typed"></span>
+                </div>
+            </div>
+        </section>
+
+        <main class="principal">
+            <div class="apresentacao">
+                <h2>Destaques</h2>
+                <p>Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado. </p>
+            </div>
+            <ul class="produtos">
+                <li class="produtos-item"><img src="assets/img/1.png" alt="Tênis 1">
+                    <div><span>Tênis 1</span></div>
+                </li>
+                <li class="produtos-item"><img src="assets/img/2.png" alt="Tênis 2">
+                    <div><span>Tênis 2</span></div>
+                </li>
+                <li class="produtos-item"><img src="assets/img/3.png" alt="Tênis 3">
+                    <div><span>Tênis 3</span></div>
+                </li>
+                <li class="produtos-item"><img src="assets/img/4.png" alt="Tênis 4">
+                    <div><span>Tênis 4</span></div>
+                </li>
+                <li class="produtos-item"><img src="assets/img/5.png" alt="Tênis 5">
+                    <div><span>Tênis 5</span></div>
+                </li>
+                <li class="produtos-item"><img src="assets/img/6.png" alt="Tênis 6">
+                    <div><span>Tênis 6</span></div>
+                </li>
+                <li class="produtos-item"><img src="assets/img/7.png" alt="Tênis 7">
+                    <div><span>Tênis 7</span></div>
+                </li>
+                <li class="produtos-item"><img src="assets/img/8.png" alt="Tênis 8">
+                    <div><span>Tênis 8</span></div>
+                </li>
+            </ul>
+        </main>
+
+        <footer class="footer">
+            <p>Todos os direitos reservados.</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed('#typed', {
+                stringsElement: '#typed-strings',
+                startDelay: 1600,
+                typeSpeed: 30,
+                showCursor: false,
+            });
+        </script>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            const sr = ScrollReveal({
+                origin: 'bottom',
+                distance: '50px',
+                duration: 2000,
+                reset: false
+            });
+
+            ScrollReveal().reveal('.introducao', { delay: 250 });
+            ScrollReveal().reveal('.apresentacao', { delay: 500 });
+            ScrollReveal().reveal('.produtos', { delay: 750 });
+        </script>
+    </body>
+
+</html>

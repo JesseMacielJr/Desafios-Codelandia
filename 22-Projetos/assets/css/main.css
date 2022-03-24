@@ -1,0 +1,228 @@
+/* Header */
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 40px;
+   flex-wrap: wrap;
+}
+
+.header-menu {
+   display: flex;
+   align-items: center;
+   gap: 62px;
+}
+
+.btn-github {
+   font-size: 1.7rem;
+   letter-spacing: 0.01em;
+   padding: 10px;
+}
+
+.btn-comunidade {
+   padding: 21px 30px;
+   border: 1px solid var(--purple);
+   border-radius: 6px;
+}
+
+.btn-github:hover {
+   color: var(--gray);
+}
+
+.btn-comunidade:hover {
+   background: var(--dark-200);
+}
+
+@media (max-width: 847px) {
+   .header {
+      flex-direction: column;
+      gap: 40px;
+   }
+   .header-menu {
+      flex-direction: column;
+      gap: 20px;
+   }
+   .btn-github {
+      padding: 20px 40px;
+      background: var(--dark-200);
+   }
+}
+
+/* Introdução */
+.introducao {
+   padding: 39px 20px;
+}
+
+.introducao span {
+   font-weight: 700;
+   font-size: 2.4rem;
+   line-height: 1.302;
+   letter-spacing: 0.05em;
+   color: var(--green);
+   text-transform: uppercase;
+   margin-bottom: 12px;
+}
+
+.introducao h1 {
+   font-weight: 600;
+   font-size: 6.4rem;
+   line-height: 1.302;
+   color: var(--light);
+   margin-bottom: 32px;
+}
+
+.introducao p {
+   font-family: "DM Sans", sans-serif;
+   font-weight: 500;
+   font-size: 2.4rem;
+   line-height: 1.7;
+   color: var(--gray);
+   max-width: 48ch;
+}
+
+@media (max-width: 847px) {
+   .introducao span {
+      font-size: 2rem;
+      line-height: 1.302;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+   }
+
+   .introducao h1 {
+      font-size: 4.8rem;
+      line-height: 1.302;
+      margin-bottom: 32px;
+   }
+
+   .introducao p {
+      font-size: 1.8rem;
+      line-height: 1.7;
+      max-width: 48ch;
+   }
+}
+
+/* Projetos */
+.projetos {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   gap: 40px 26px;
+   margin-top: 8px;
+}
+
+.projeto {
+   padding: 24px;
+   background: var(--dark-200);
+   border-radius: 8px;
+   border: 1px solid var(--purple);
+   margin-bottom: 21px;
+}
+
+.projeto-imagem {
+   max-width: 100%;
+   height: 222px;
+   background: var(--dark) url("../img/projeto-imagem.svg") no-repeat center
+      center;
+   margin-bottom: 24px;
+}
+
+.projeto h2 {
+   font-size: 2.4rem;
+   line-height: 1.302;
+   font-weight: 500;
+   color: var(--light);
+   margin-bottom: 22px;
+}
+
+.projeto p {
+   font-family: "DM Sans", sans-serif;
+   font-size: 1.8rem;
+   line-height: 1.7;
+   font-weight: 500;
+   color: var(--gray);
+   margin-bottom: 48px;
+}
+
+.projeto-links {
+   display: flex;
+   align-items: center;
+   gap: 24px;
+}
+
+.btn-demo {
+   color: var(--dark);
+   padding: 11px 60px;
+   background: var(--green);
+   border-radius: 4px;
+}
+
+.btn-git {
+   color: var(--light);
+   padding: 11px 55px;
+   border: 1px solid var(--green);
+   border-radius: 4px;
+}
+
+.btn-demo:hover {
+   background: #00c056;
+}
+
+.btn-git:hover {
+   background: #0e091b;
+}
+
+@media (max-width: 847px) {
+   .projetos {
+      grid-template-columns: 1fr;
+      gap: 32px;
+   }
+   .projeto h2 {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 16px;
+   }
+   .projeto p {
+      font-size: 1.6rem;
+      margin-bottom: 32px;
+   }
+   .projeto-links {
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+   }
+   .btn-demo,
+   .btn-git {
+      width: 100%;
+      text-align: center;
+   }
+}
+
+/* Footer */
+.footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.footer-creditos {
+   display: flex;
+   align-items: center;
+   gap: 48px;
+   font-size: 1.8rem;
+   line-height: 1.5;
+   color: var(--gray);
+}
+
+@media (max-width: 847px) {
+   .footer-creditos {
+      font-size: 1.6rem;
+      gap: 32px;
+   }
+}
+
+@media (max-width: 458px) {
+   .footer {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+   }
+}

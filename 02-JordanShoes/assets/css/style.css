@@ -1,0 +1,209 @@
+/*Variáveis*/
+:root {
+   --bgSite: #f6f6f6;
+   --bgCard: #ebe9ea;
+
+   --white: #f9f9f9;
+
+   --title: #181818;
+   --text: #474747;
+}
+
+/*Reset*/
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html {
+   font-family: "Montserrat", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+}
+ul,
+ol {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+a {
+   text-decoration: none;
+}
+img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+button,
+input {
+   border: 0;
+}
+button:focus,
+input:focus {
+   border: 0;
+}
+
+/* Estilos */
+body {
+   background: var(--bgSite);
+}
+
+.header-promocao,
+.footer {
+   padding: 15px;
+   text-align: center;
+   background: var(--title);
+   color: var(--white);
+}
+
+.header-promocao p,
+.footer p {
+   font-size: 1rem;
+   line-height: 2;
+   font-weight: 500;
+}
+
+.header-logo {
+   padding: 6px;
+   text-align: center;
+   color: var(--title);
+}
+
+.header-logo p {
+   font-size: 1.5rem;
+   line-height: 2;
+   font-weight: 600;
+}
+
+.introducao {
+   position: relative;
+}
+
+.introducao::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: url("../../assets/img/wallpaper.jpeg") no-repeat center;
+   background-size: cover;
+   filter: brightness(50%);
+   z-index: -1;
+}
+
+.introducao-conteudo {
+   max-width: 1400px;
+   margin: 0 auto;
+   padding: 130px 40px;
+   color: var(--white);
+}
+
+.introducao-conteudo h1 {
+   font-size: 2rem;
+   line-height: 1.22;
+   font-weight: 700;
+}
+
+.introducao-conteudo-texto {
+   font-size: 1.125rem;
+   line-height: 1.96;
+   font-weight: 600;
+   max-width: 500px;
+   height: 100px;
+   padding: 10px 0px;
+}
+
+.principal {
+   padding: 60px 0px;
+}
+
+.apresentacao {
+   text-align: center;
+   padding: 0px 40px;
+}
+
+.apresentacao h2 {
+   font-size: 2rem;
+   line-height: 1.96;
+   font-weight: 600;
+   color: var(--title);
+}
+
+.apresentacao p {
+   font-size: 1.125rem;
+   line-height: 1.96;
+   font-weight: 500;
+   color: var(--text);
+   margin-bottom: 60px;
+}
+
+.produtos {
+   max-width: 1400px;
+   padding: 0px 40px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+   gap: 40px 13px;
+}
+
+.produtos-item {
+   background: var(--bgCard);
+   display: grid;
+   position: relative;
+   place-content: center;
+   height: 300px;
+   padding: 20px;
+}
+
+.produtos-item div {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   opacity: 0;
+}
+
+.produtos-item span {
+   color: var(--text);
+   text-align: center;
+   position: absolute;
+   bottom: 20px;
+   left: 0;
+   right: 0;
+}
+
+.produtos-item div:hover {
+   opacity: 1;
+   transition: 1s;
+}
+
+.produtos-item:hover img {
+   transform: scale(1.1);
+   transition: 1s all ease;
+}
+
+/* Layout Responsivo */
+
+@media (max-width: 800px) {
+   .introducao-conteudo h1 {
+      font-size: 1.75rem;
+      line-height: 1.21;
+   }
+
+   .introducao-conteudo p,
+   .apresentacao p {
+      font-size: 1rem;
+      line-height: 1.8;
+   }
+
+   .apresentacao h2 {
+      font-size: 1.75rem;
+      line-height: 1.96;
+   }
+}

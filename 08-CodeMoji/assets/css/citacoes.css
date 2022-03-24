@@ -1,0 +1,35 @@
+.citacoes {
+   background: var(--background2);
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 60px 70px;
+   display: flex;
+   margin-top: 320px;
+   justify-content: space-between;
+}
+
+.citacoes p {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    line-height: 1.20;
+    margin-bottom: 28px;
+    opacity: 0.75;
+    position: relative;
+}
+
+.citacoes p::before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 30px;
+    background: var(--roxo);
+    margin-right: 12px;
+}
+
+.citacoes blockquote {
+    font-size: 1rem;
+    line-height: 1.625;
+    font-style: italic;
+    max-width: 48ch;
+}

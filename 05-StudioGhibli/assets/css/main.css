@@ -1,0 +1,141 @@
+/* Principal */
+.container {
+   max-width: 1440px;
+   margin: 60px auto;
+   padding: 0px 25px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.conteudo {
+   color: var(--white);
+}
+
+.conteudo span {
+   display: block;
+   font-size: 1.25rem;
+   line-height: 1.5;
+   font-weight: 700;
+   letter-spacing: 1.03;
+   margin-bottom: 14px;
+}
+
+.conteudo h1 {
+   max-width: 9ch;
+   font-size: 4.25rem;
+   line-height: 1.1;
+   font-weight: 900;
+   margin-bottom: 25px;
+}
+
+.conteudo p {
+   max-width: 44ch;
+   font-size: 1rem;
+   line-height: 1.8;
+   font-weight: 400;
+   margin-bottom: 46px;
+}
+
+.botoes {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.botoes a {
+   transform: skewX(-15deg);
+}
+
+.botao-agora div {
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   padding: 10px 34px;
+   background: var(--green);
+}
+
+.botao-agora img {
+   display: inline-block;
+}
+
+.botao-trailer {
+   background: transparent;
+   border: 2px solid var(--green);
+   padding: 8px 34px;
+}
+
+/* Imagem de Ilustração */
+.ilustracao {
+   width: 100%;
+   height: 100%;
+   max-width: 500px;
+   object-fit: cover;
+   animation: floating 8s linear infinite;
+}
+
+@keyframes floating {
+   0%,
+   100% {
+      transform: translateY(0rem);
+   }
+   25% {
+      transform: translateY(3rem);
+   }
+   75% {
+      transform: translateY(-3rem);
+   }
+}
+
+@media (max-width: 1020px) {
+   .container {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-top: 0px;
+   }
+   .conteudo span {
+      font-size: 1.125rem;
+      line-height: 1.5;
+      margin-bottom: 6px;
+   }
+   .conteudo h1 {
+      font-size: 3.5rem;
+      margin-bottom: 16px;
+   }
+   .conteudo p {
+      font-size: 0.875rem;
+      margin-bottom: 58px;
+   }
+   .ilustracao {
+      grid-row: 1;
+   }
+   .botao-trailer {
+      display: none;
+   }
+   @keyframes floating {
+      0%,
+      100% {
+         transform: translateY(0rem);
+      }
+      25% {
+         transform: translateY(1rem);
+      }
+      75% {
+         transform: translateY(-1rem);
+      }
+   }
+}
+
+@media (max-width: 464px) {
+   @keyframes floating {
+      0%,
+      100% {
+         transform: translateY(0rem);
+      }
+      25% {
+         transform: translateY(0.5rem);
+      }
+      75% {
+         transform: translateY(-0.5rem);
+      }
+   }
+}
