@@ -20,7 +20,7 @@ Os projetos são criados a partir dos layouts criados pelo mesmo, sendo codados 
 - [ ] Desafio 13 - Arcane
 - [ ] Desafio 14 - HelpDog
 - [ ] Desafio 15 - README pro perfil do GitHub
-- [ ] Desafio 16 - Feliz Natal
+- [X] Desafio 16 - Feliz Natal
 - [ ] Desafio 17 - Kenai
 - [ ] Desafio 18 - Spider-Man
 - [ ] Desafio 19 - Rachi 
