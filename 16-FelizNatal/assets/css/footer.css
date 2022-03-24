@@ -26,6 +26,10 @@
    border-radius: 50%;
 }
 
+.footer-links li:hover {
+   box-shadow: 0 0 6px 0 var(--red);
+}
+
 .links-img {
    max-width: 24px;
 }

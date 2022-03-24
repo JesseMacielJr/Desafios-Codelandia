@@ -16,6 +16,11 @@
    font-size: 1.6rem;
    line-height: 1.5;
    font-weight: 500;
+   transition: .2s ease;
+}
+
+.header-menu a:hover {
+   color: var(--red);
 }
 
 @media (max-width: 894px) {

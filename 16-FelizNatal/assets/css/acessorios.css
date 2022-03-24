@@ -36,11 +36,26 @@
    flex-direction: column;
    align-items: center;
    justify-content: stretch;
+   padding: 20px;
+   transition: .3s ease;
+}
+
+.acessorios-lista li:hover {
+   background: var(--pink-200);
+   border-radius: 8px;
 }
 
 .acessorios-imagem {
    max-width: 200px;
    margin-bottom: 17px;
+}
+
+.acessorios-imagem img {
+   transition: 0.3s ease;
+}
+
+.acessorios-imagem img:hover {
+   transform: scale(1.05);
 }
 
 .acessorios-lista h3 {

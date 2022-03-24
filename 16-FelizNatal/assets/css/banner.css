@@ -11,6 +11,10 @@
    flex-shrink: 10;
 }
 
+.banner-img.animBanner {
+   animation: animBanner 4s linear infinite;
+}
+
 .banner-info {
    flex-shrink: 0;
 }
@@ -42,6 +46,11 @@
    border-radius: 8px;
    background: var(--red);
    color: var(--white);
+   transition: 0.3s ease;
+}
+
+.banner-info a:hover {
+   background: var(--red-200);
 }
 
 .banner-info a::before {
@@ -51,6 +60,10 @@
    height: 24px;
    background: url("../img/gift.svg") no-repeat center center;
    margin-right: 10px;
+}
+
+.banner-info a:hover::before {
+   animation: animPresente .5s ease-in-out;
 }
 
 @media (max-width: 894px) {
@@ -94,5 +107,29 @@
    .banner-info a {
       font-size: 1.2rem;
       padding: 12px 32px;
+   }
+}
+
+@keyframes animBanner {
+   0%,
+   100% {
+      transform: scale(1);
+   }
+   50% {
+      transform: scale(1.05);
+   }
+}
+
+@keyframes animPresente {
+   0%,
+   100% {
+      transform: rotate(0deg);
+   }
+   20%,60% {
+      transform: rotate(15deg);
+   }
+   40%,
+   80% {
+      transform: rotate(-15deg);
    }
 }
