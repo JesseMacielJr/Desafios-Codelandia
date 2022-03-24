@@ -1,0 +1,37 @@
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 40px;
+}
+
+.header-menu {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 51px;
+}
+
+.header-menu a {
+   font-size: 1.6rem;
+   line-height: 1.5;
+   font-weight: 500;
+}
+
+@media (max-width: 894px) {
+   .header-menu {
+      gap: 32px;
+   }
+}
+
+@media (max-width: 650px) {
+   .header {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+   }
+   .header-menu {
+      justify-content: center;
+      gap: 24px;
+   }
+}

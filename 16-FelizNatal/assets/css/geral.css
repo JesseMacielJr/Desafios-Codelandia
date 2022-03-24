@@ -1,0 +1,62 @@
+/*Variáveis: Cores */
+:root {
+   --red: #da2535;
+   --pink: #f7c7b9;
+   --white: #f9f9f9;
+   --gray: #8d8d8d;
+   --gray-200: #404040;
+   --black-light: #161212;
+}
+
+.cor-red {
+   color: var(--cor-red);
+}
+.cor-pink {
+   color: var(--cor-pink);
+}
+.cor-white {
+   color: var(--cor-white);
+}
+.cor-gray {
+   color: var(--cor-gray);
+}
+.cor-gray-200 {
+   color: var(--cor-gray-200);
+}
+.cor-black-light {
+   color: var(--cor-black-light);
+}
+
+/* Estilo */
+body {
+   background: var(--pink);
+   font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+   color: var(--dark-light);
+}
+
+p {
+   color: var(--gray);
+}
+
+.container {
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.logo {
+   display: flex;
+   gap: 12px;
+   align-items: center;
+}
+
+.logo span {
+   font-size: 2.4rem;
+   line-height: 1.5;
+   font-weight: 500;
+}
