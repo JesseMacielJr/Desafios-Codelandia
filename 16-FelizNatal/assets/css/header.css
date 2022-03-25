@@ -44,6 +44,7 @@
       height: 30px;
       position: relative;
       outline: none;
+      -webkit-tap-highlight-color: transparent;
    }
 
    [data-menu="button"]::before {
@@ -72,7 +73,7 @@
       top: 80px;
       right: 0px;
       padding: 20px;
-      background: #FFDCD2;
+      background: #ffdcd2;
    }
 
    .header-menu.active {
