@@ -4,29 +4,11 @@
    --red-200: #c20b1c;
    --pink: #f7c7b9;
    --pink-200: #f7c9b93a;
+   --pink-400: #FFDCD2;
    --white: #f9f9f9;
    --gray: #8d8d8d;
    --gray-200: #404040;
    --black-light: #161212;
-}
-
-.cor-red {
-   color: var(--cor-red);
-}
-.cor-pink {
-   color: var(--cor-pink);
-}
-.cor-white {
-   color: var(--cor-white);
-}
-.cor-gray {
-   color: var(--cor-gray);
-}
-.cor-gray-200 {
-   color: var(--cor-gray-200);
-}
-.cor-black-light {
-   color: var(--cor-black-light);
 }
 
 /* Estilo */
@@ -61,4 +43,16 @@ p {
    font-size: 2.4rem;
    line-height: 1.5;
    font-weight: 500;
+}
+
+@media (max-width: 894px) {
+   .logo span {
+      font-size: 1.8rem;
+   }
+}
+
+@media (max-width: 432px) {
+   .logo span {
+      font-size: 1.6rem;
+   }
 }
