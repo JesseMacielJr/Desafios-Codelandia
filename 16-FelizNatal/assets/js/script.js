@@ -8,6 +8,5 @@ function handleBtn() {
     headerNav.classList.toggle('active');
 }
 
-['touchstart', 'click'].forEach(userEvent => {
-    btnMobile.addEventListener(userEvent, handleBtn);
-})
+btnMobile.addEventListener('click', handleBtn);
+
