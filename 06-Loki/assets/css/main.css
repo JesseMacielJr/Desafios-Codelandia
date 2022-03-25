@@ -24,7 +24,7 @@
 }
 
 .informacao p {
-   max-width: 72ch;
+   max-width: 56ch;
    font-size: 1.25rem;
    line-height: 1.6;
 }
@@ -43,15 +43,20 @@
    gap: 12px;
 }
 
+.dados-tempo img {
+   width: 30px;
+   height: 30px;
+}
+
 .informacao-dados ul {
    display: flex;
    gap: 12px;
    align-items: center;
 }
 
-.informacao-dados img {
-   width: 24px;
-   height: 24px;
+.dados-stars img {
+   width: 40px;
+   height: 40px;
 }
 
 .informacao-dados span {
