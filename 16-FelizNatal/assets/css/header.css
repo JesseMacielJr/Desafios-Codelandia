@@ -43,6 +43,7 @@
       width: max-content;
       height: 30px;
       position: relative;
+      outline: none;
    }
 
    [data-menu="button"]::before {
